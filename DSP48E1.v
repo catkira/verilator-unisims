@@ -2091,7 +2091,7 @@ module DSP48E1 #(
     $width (negedge CLK, 0:0:0, 0, notifier);
     $width (posedge CLK, 0:0:0, 0, notifier);
 `endif
-    specparam PATHPULSE$ = 0;
+    // specparam PATHPULSE$ = 0;  // does not work with verilator 5.042
   endspecify
 
 endmodule
